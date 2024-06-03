@@ -1,0 +1,17 @@
+.buyer-seller-tag {
+  padding: 1rem 1.3rem;
+  background-color: #f3e5e5;
+  width: fit-content;
+  color: #6e6a01;
+  font-weight: bolder;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.buyer-seller-tag:hover {
+    box-shadow: 2px 2px 17px red;
+    background-color: whitesmoke;
+    color: rgb(222, 92, 92);
+}

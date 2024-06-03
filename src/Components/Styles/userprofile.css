@@ -1,0 +1,33 @@
+.userprofile-container{
+width: 100vw;
+height: 100vh;
+background-color: white;
+display: flex;
+flex-direction: column;
+/* justify-content: space-between; */
+gap: 3rem;
+padding: 2rem;
+}
+
+.user-info-container{
+    border: 2px solid red;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user-order-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    border: 2px solid red;
+    padding: 2rem 1rem;
+}
+.user-order-container button{
+    padding: 0.8rem 1rem;
+    border-radius: 0.8rem;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-color: transparent;
+}

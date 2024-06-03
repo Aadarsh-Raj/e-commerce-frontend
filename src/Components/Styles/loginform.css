@@ -1,0 +1,57 @@
+.login-form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #6e6a01 ;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    background-color: whitesmoke;
+}
+.login-form-container h2{
+color: #a8a547;
+text-decoration: underline;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+.login-form input{
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    outline-color: #6e6a01 ;
+    border-color: #a8a547;
+}
+.login-form input:last-child{
+    cursor: pointer;
+    border-color: #6e6a01;
+    color: #6e6a01;
+    background-color: #e3e06e6b;
+}
+
+.signup-para{
+    font-weight: bolder;
+    color: rgb(86, 83, 83);
+    font-size: 0.8125rem;
+}
+.signup-para span{
+    color: rgb(232, 18, 18);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.signup-form-container{
+    min-width: 350px !important;
+}
+
+.signup-form-container .login-form input{
+    width: 100%;
+}
+.signup-form-container .login-form textarea{
+    padding: 0.5rem;
+    font-weight: 700;
+}

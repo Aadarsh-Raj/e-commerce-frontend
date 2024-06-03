@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { useSelector, useDispatch } from "react-redux";
+import LoginPage from "./Components/LoginPage";
+import UserProfile from "./Components/UserProfile";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main className="main">
+        <LoginPage />
+        {/* <UserProfile /> */}
+      </main>
+    </>
   );
 }
 
 export default App;
+
+/*
+if logged in --> Landing Page
+if not logged in --> Loggin Page
+
+1. Buyer tag, seller tag --> 1 component
+2. login --> 1 component 
+3. sign page for buyer and seller 
+
+
+
+*/
