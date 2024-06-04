@@ -1,15 +1,15 @@
 import "./App.css";
 
-import { useSelector, useDispatch } from "react-redux";
 import LoginPage from "./Components/LoginPage";
 import UserProfile from "./Components/UserProfile";
+import WishlistContainer from "./Components/WishlistContainer";
 
 function App() {
   return (
     <>
       <main className="main">
-        <LoginPage />
-        {/* <UserProfile /> */}
+       {/* <LoginPage /> */}
+       <WishlistContainer />
       </main>
     </>
   );

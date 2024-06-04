@@ -1,7 +1,7 @@
 .login-form-container{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.2rem;
     align-items: center;
     justify-content: center;
     border: 2px solid #6e6a01 ;
@@ -25,6 +25,11 @@ text-decoration: underline;
     font-weight: bold;
     outline-color: #6e6a01 ;
     border-color: #a8a547;
+}
+.login-form select{
+    cursor: pointer;
+    border: transparent;
+    background-color: transparent;
 }
 .login-form input:last-child{
     cursor: pointer;

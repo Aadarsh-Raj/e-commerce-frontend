@@ -10,7 +10,7 @@
   cursor: pointer;
   letter-spacing: 2px;
 }
-.buyer-seller-tag:hover {
+.active-tag {
     box-shadow: 2px 2px 17px red;
     background-color: whitesmoke;
     color: rgb(222, 92, 92);

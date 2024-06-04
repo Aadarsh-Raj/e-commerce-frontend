@@ -1,0 +1,23 @@
+
+.wishlist-container h2 {
+  text-align: center;
+  padding: 1rem 0;
+}
+.wishlist-container table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+.wishlist-container table,
+.wishlist-container td,
+.wishlist-container th {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.wishlist-container td,
+.wishlist-container th {
+  padding: 15px;
+}
+
+

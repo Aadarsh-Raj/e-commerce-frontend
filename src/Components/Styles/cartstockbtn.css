@@ -1,0 +1,26 @@
+.cart-stock-btn{
+    padding: 0.8rem 0.6rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    font-weight: bolder;
+}
+.cart-stock-btn img{
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+
+
+@media  screen and (max-width:768px) {
+    .cart-stock-btn{
+        background-color: transparent !important;
+    }
+    .cart-stock-btn p{
+        display: none;
+    }
+    .cart-stock-btn img{
+        display: block;
+    
+    }
+}
