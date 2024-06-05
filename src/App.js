@@ -3,13 +3,18 @@ import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
 import LoginPage from "./Components/LoginPage";
 import UserProfile from "./Components/UserProfile";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <>
       <main className="main">
+        <Header />
+
         <LoginPage />
         {/* <UserProfile /> */}
+        <Footer />
       </main>
     </>
   );
