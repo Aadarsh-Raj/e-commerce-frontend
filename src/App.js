@@ -2,14 +2,13 @@ import "./App.css";
 
 import LoginPage from "./Components/LoginPage";
 import UserProfile from "./Components/UserProfile";
-import WishlistContainer from "./Components/WishlistContainer";
 
 function App() {
   return (
     <>
       <main className="main">
-       {/* <LoginPage /> */}
-       <WishlistContainer />
+        <LoginPage />
+        {/* <UserProfile /> */}
       </main>
     </>
   );
