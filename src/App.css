@@ -7,8 +7,6 @@
   pointer-events: none;
 }
 
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,9 +21,10 @@
 .App-link {
   color: #61dafb;
 }
-.main{
+.main {
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+  /* background-color: yellow; */
   /* background-color: yellow; */
 }
