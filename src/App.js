@@ -1,15 +1,21 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import LoginPage from "./Components/LoginPage";
 import UserProfile from "./Components/UserProfile";
 import WishlistContainer from "./Components/WishlistContainer";
+import Home from "./Components/Home";
 
 function App() {
   return (
     <>
       <main className="main">
-       {/* <LoginPage /> */}
-       <WishlistContainer />
+        <Routes>
+          <Route path={"/"} element={<Home />} />
+          <Route path={"/login"} element={<LoginPage />} />
+          <Route path={"/mywishlist"} element={<WishlistContainer />} />
+          <Route path={"/myprofile"} element={<UserProfile />} />
+        </Routes>
       </main>
     </>
   );
