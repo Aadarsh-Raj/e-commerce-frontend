@@ -1,12 +1,8 @@
-import "./Header.css";
+import "../Styles/Header.css";
 import { GoPerson } from "react-icons/go";
 import { BsCart } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
 // import { CiSearch } from "react-icons/ci";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
 import { useState } from "react";
 // import { RxHamburgerMenu } from "react-icons/rx";
 import { CiHome } from "react-icons/ci";
@@ -14,6 +10,7 @@ import { GiClothes } from "react-icons/gi";
 import { FaBlogger } from "react-icons/fa";
 import { CiCircleInfo } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import SocialMediaContainer from "../SocialMediaContainer";
 
 const Header = () => {
   const [activeNavItem, setActiveNavItem] = useState("Home");
@@ -150,25 +147,8 @@ const Header = () => {
         {/* <div className="hamberMenu">
           <RxHamburgerMenu size={"1.9rem"} />
         </div> */}
-
-        <div className="socoalMedia">
-          <div className="tooltip">
-            <FaWhatsapp />
-            <span className="tooltiptext">WhatsApp</span>
-          </div>
-          <div className="tooltip">
-            <FaInstagram />
-            <span className="tooltiptext">Instagram</span>
-          </div>
-          <div className="tooltip">
-            <FaFacebookF />
-            <span className="tooltiptext">Facebook</span>
-          </div>
-          <div className="tooltip">
-            <FaLinkedin />
-            <span className="tooltiptext">Linkedin</span>
-          </div>
-        </div>
+        <SocialMediaContainer />
+        
       </div>
 
       <div className="navBottom">

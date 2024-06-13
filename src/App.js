@@ -6,7 +6,7 @@ import UserProfile from "./Components/UserProfile";
 import WishlistContainer from "./Components/WishlistContainer";
 import Home from "./Components/Home";
 import Header from "./Components/Header/Header"
-import Footer from "./Components/Footer/Footer"
+import Footer from "./Components/Footer"
 function App() {
   return (
     <>
