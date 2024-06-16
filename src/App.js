@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import CardList from "./Components/CardList/CardList";
 // import Card from "./Components/Card/Card";
@@ -6,16 +7,21 @@ import Header from "./Components/Header/Header";
 import LoginPage from "./Components/LoginPage";
 import ProductCart from "./Components/ProductCart/ProductCart";
 import UserProfile from "./Components/UserProfile";
-
+import WishlistContainer from "./Components/WishlistContainer";
+import Home from "./Components/Home";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <>
       <main className="main">
         <Header />
-        <CardList />
-        {/* <ProductCart /> */}
-        {/* <LoginPage /> */}
-        {/* <UserProfile /> */}
+        <Routes>
+          <Route path={"/"} element={<Home />} />
+          <Route path={"/login"} element={<LoginPage />} />
+          <Route path={"/mywishlist"} element={<WishlistContainer />} />
+          <Route path={"/myprofile"} element={<UserProfile />} />
+        </Routes>
+        <Footer />
       </main>
     </>
   );

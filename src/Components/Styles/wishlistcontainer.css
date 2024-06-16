@@ -3,10 +3,11 @@
   text-align: center;
   padding: 1rem 0;
 }
-.wishlist-container table {
+.wishlist-container>table {
   border-collapse: collapse;
   width: 90%;
   margin: auto;
+ 
 }
 
 .wishlist-container table,
@@ -21,3 +22,8 @@
 }
 
 
+@media screen  and (max-width:768px){
+  .wishlist-container>table{
+    font-size: 0.8rem;
+  }
+}
