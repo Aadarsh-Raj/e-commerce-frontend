@@ -1,0 +1,9 @@
+.cardList {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 5rem;
+  margin-top: 2rem;
+}

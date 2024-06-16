@@ -28,3 +28,10 @@
   /* background-color: yellow; */
   /* background-color: yellow; */
 }
+
+body {
+  /* background-color: #0c1826; */
+  background-image: url("./Assets/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

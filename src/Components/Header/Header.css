@@ -61,6 +61,19 @@ nav {
   }
 }
 
+.cartQuantity {
+  position: absolute;
+  top: -15px;
+  left: 7px;
+  padding: 0 0.4rem;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #0e0e0e;
+  &:hover {
+    background-color: rgb(255, 132, 0);
+  }
+}
+
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 72px;

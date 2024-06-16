@@ -1,0 +1,20 @@
+.sizeButton {
+  padding: 4px 9px;
+  margin: 0 2px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  /* line-height: 1.5; */
+}
+
+.sizeContainer {
+  line-height: 1.6;
+}
+
+.sizeButton.active {
+  background-color: #eee;
+  border-color: black;
+  color: black;
+  scale: 1.05;
+}

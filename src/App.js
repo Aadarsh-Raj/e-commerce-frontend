@@ -1,13 +1,20 @@
 import "./App.css";
+import CardList from "./Components/CardList/CardList";
+// import Card from "./Components/Card/Card";
+import Header from "./Components/Header/Header";
 
 import LoginPage from "./Components/LoginPage";
+import ProductCart from "./Components/ProductCart/ProductCart";
 import UserProfile from "./Components/UserProfile";
 
 function App() {
   return (
     <>
       <main className="main">
-        <LoginPage />
+        <Header />
+        <CardList />
+        {/* <ProductCart /> */}
+        {/* <LoginPage /> */}
         {/* <UserProfile /> */}
       </main>
     </>

@@ -31,10 +31,12 @@ const Header = () => {
           </div>
           <div className="tooltip">
             <BsCart size={"1.5rem"} />
+            <span className="cartQuantity">0</span>
             <span className="tooltiptext">Cart</span>
           </div>
           <div className="tooltip">
             <CiHeart size={"1.9rem"} />
+            <div className="cartQuantity">0</div>
             <span className="tooltiptext">Wishlist</span>
           </div>
           <div>

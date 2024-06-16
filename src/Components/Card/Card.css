@@ -1,0 +1,172 @@
+.card {
+  position: relative;
+  /* margin: 2rem; */
+  display: flex;
+  width: 240px;
+  height: 360px;
+  background: #c6c6d0;
+  color: #212121;
+  box-shadow: inset 0 0 0 4px #212121;
+  transition: 0.6s 0.4s;
+  cursor: pointer;
+}
+
+.border {
+  position: absolute;
+  inset: 0;
+}
+
+.border line {
+  stroke-width: 4px;
+  stroke: #c6c6d0;
+  fill: none;
+  transition: 0.6s ease-in-out;
+}
+
+.border line.top,
+.border line.bottom {
+  stroke-dasharray: 240;
+}
+
+.border line.left,
+.border line.right {
+  stroke-dasharray: 360;
+}
+
+.cardLogo {
+  width: 97%;
+  height: 97%;
+  position: relative;
+  margin: 0.2rem auto 0;
+  fill: #212121;
+  transition: 0.6s;
+  opacity: 0.9;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .wishlistIcon {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 4%;
+    left: 7%;
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.6rem 0rem;
+  }
+  .quickView {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 16%;
+    left: 7%;
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.6rem 0.1rem;
+  }
+}
+
+.card:hover {
+  background-color: transparent;
+  transition-delay: 0s;
+}
+.card .wishlistIcon {
+  background-color: #fff;
+}
+
+.wishlistIcon:hover {
+  background-color: black;
+  color: #fff;
+}
+.quickView:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.card:hover .border line {
+  transition-delay: 0.1s;
+}
+
+.card:hover .border line.top {
+  transform: translateX(-400px);
+}
+
+.card:hover .border line.bottom {
+  transform: translateX(400px);
+}
+
+.card:hover .border line.left {
+  transform: translateY(640px);
+}
+
+.card:hover .border line.right {
+  transform: translateY(-640px);
+}
+
+.card:hover .cardLogo {
+  transition-delay: 0s;
+  /* transform: scale(1.05); */
+  fill: #c6c6d0;
+  filter: drop-shadow(0 0 30px #c6c6d080);
+  opacity: 0.9;
+}
+
+.addToCartText {
+  position: absolute;
+  bottom: 9%;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  background-color: #fff;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card:hover .addToCartText {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+/* .card .addToCartText {
+  background-color: #fff;
+  color: black;
+} */
+
+/* .addToCartText:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+} */
+
+/* !----------------- */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.popupContent {
+  width: 700px;
+  height: 600px;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.closePopup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  z-index: 1001;
+}
