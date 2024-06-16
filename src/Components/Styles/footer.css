@@ -1,6 +1,8 @@
 .footer {
   background-color: rgb(245, 245, 245);
   padding: 1rem 0;
+  color: black;
+  margin-top: 1.5rem;
 }
 
 .footer-first {

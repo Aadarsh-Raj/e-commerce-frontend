@@ -17,7 +17,7 @@ const UserProfile = () => {
             <Link to="/">Orders</Link>
           </button>{" "}
           <button>
-            <Link to="/">Carted items</Link>
+            <Link to="/productcart">Carted items</Link>
           </button>
           <button>
             <Link to="/mywishlist">whislists</Link>

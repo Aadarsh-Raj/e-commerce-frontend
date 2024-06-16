@@ -1,7 +1,7 @@
 import React from "react";
 import "./Styles/cartstockbtn.css"
-import outOfStockPng from "../Assets/sold-tag-icon.png"
-import addToCartPng from "../Assets/add-to-cart.png"
+import { MdOutlineShoppingCartCheckout } from "react-icons/md";
+import { TbGardenCartOff } from "react-icons/tb";
 const CartStockBtn = (props) => {
   return (
     <>
@@ -21,7 +21,8 @@ const CartStockBtn = (props) => {
         </p>
         
         {
-            props.stock == 0 ? <img src={outOfStockPng} alt="" /> : <img src={addToCartPng} alt="" />
+            props.stock == 0 ? <TbGardenCartOff />
+            : <MdOutlineShoppingCartCheckout />
         }
         
       </button>

@@ -5,9 +5,7 @@
     border-radius: 0.8rem;
     font-weight: bolder;
 }
-.cart-stock-btn img{
-    width: 35px;
-    height: 35px;
+.cart-stock-btn svg{
     display: none;
 }
 
@@ -19,7 +17,7 @@
     .cart-stock-btn p{
         display: none;
     }
-    .cart-stock-btn img{
+    .cart-stock-btn svg{
         display: block;
     
     }
