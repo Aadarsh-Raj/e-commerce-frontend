@@ -1,5 +1,5 @@
 import React from "react";
-import "./Styles/cartstockbtn.css"
+import "./Styles/cartstockbtn.css";
 import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 import { TbGardenCartOff } from "react-icons/tb";
 const CartStockBtn = (props) => {
@@ -8,23 +8,19 @@ const CartStockBtn = (props) => {
       <button
         className="cart-stock-btn"
         style={
-          props.stock == 0
+          props.stock === 0
             ? { backgroundColor: "red", color: "white" }
             : { backgroundColor: "black", color: "white" }
         }
-        
-          disabled= {props.stock== 0 ? true: false}
-        
+        disabled={props.stock === 0 ? true : false}
       >
-        <p>
-        {props.stock !== 0 ? "ADD TO CART" : "OUT OF STOCK"}
-        </p>
-        
-        {
-            props.stock == 0 ? <TbGardenCartOff />
-            : <MdOutlineShoppingCartCheckout />
-        }
-        
+        <p>{props.stock !== 0 ? "ADD TO CART" : "OUT OF STOCK"}</p>
+
+        {props.stock === 0 ? (
+          <img src={outOfStockPng} alt="stk" />
+        ) : (
+          <img src={addToCartPng} alt="stock" />
+        )}
       </button>
     </>
   );
