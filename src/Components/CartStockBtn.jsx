@@ -17,9 +17,9 @@ const CartStockBtn = (props) => {
         <p>{props.stock !== 0 ? "ADD TO CART" : "OUT OF STOCK"}</p>
 
         {props.stock === 0 ? (
-          <img src={outOfStockPng} alt="stk" />
+          <TbGardenCartOff />
         ) : (
-          <img src={addToCartPng} alt="stock" />
+          <MdOutlineShoppingCartCheckout />
         )}
       </button>
     </>

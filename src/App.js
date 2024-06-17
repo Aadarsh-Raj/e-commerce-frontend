@@ -5,7 +5,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 
 import LoginPage from "./Components/LoginPage";
-// import ProductCart from "./Components/ProductCart/ProductCart";
+import ProductCart from "./Components/ProductCart/ProductCart";
 import UserProfile from "./Components/UserProfile";
 import WishlistContainer from "./Components/WishlistContainer";
 import Home from "./Components/Home";
