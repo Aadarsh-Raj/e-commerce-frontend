@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setBuyerSellerTag, setIsLoginFormActive } from "../redux/counterSlice";
 const LoginPage = () => {
   const dispatch = useDispatch();
+
   const changeTag = (tag) => {
     dispatch(setBuyerSellerTag(tag));
   };
@@ -17,7 +18,6 @@ const LoginPage = () => {
   const changeLoginStatus = () => {
     dispatch(setIsLoginFormActive(!isLoginFormActive));
   };
-  console.log(isLoginFormActive);
   return (
     <>
       <div className="login-container">

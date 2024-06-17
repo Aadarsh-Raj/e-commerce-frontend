@@ -4,7 +4,10 @@ const counterSlice = createSlice({
   name: "counter",
   initialState: {
     buyerSellerTag: "Buyer",
-    isLoginFormActive: true
+    isLoginFormActive: true,
+    user:"",
+    token:localStorage.getItem("user"),
+    apiUrl:"http://localhost:4000/api"
   },
   reducers: {
     setBuyerSellerTag: (state, action) => {
@@ -13,7 +16,12 @@ const counterSlice = createSlice({
     setIsLoginFormActive: (state, action) => {
       state.isLoginFormActive = action.payload;
     },
-
+    setUser: (state, action)=>{
+      state.user = action.payload
+    },
+    setToken:(state, action)=>{
+      state.token = action.payload;
+    }
   },
 });
 

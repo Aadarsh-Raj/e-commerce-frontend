@@ -3,11 +3,43 @@ import "./Styles/loginform.css";
 import { useSelector, useDispatch } from "react-redux";
 const SignUpForm = () => {
   const buyerSellerTag = useSelector((state) => state.counter.buyerSellerTag);
+  const apiUrl = useSelector((state)=>state.counter.apiUrl);
+  const signUpUser = async (e)=>{
+    e.preventDefault();
+    if(e.target.children[1].value !== e.target.children[2].value){
+      console.log("Password didn't match")
+      return ;
+    }
+    const formInputs = {
+      email:e.target.children[0].value,
+      password: e.target.children[1].value,
+      role:buyerSellerTag.toLowerCase(),
+      name: e.target.children[4].value,
+      address:e.target.children[5].value,
+      phoneNumber:e.target.children[6].value
+    }
+    try {
+      const response = await fetch(`${apiUrl}/user/create`,{
+        method:"POST",
+        headers:{
+          'Content-Type':"application/json"
+        },
+        body:JSON.stringify(formInputs)
+      })
+      const data = await response.json();
+      if(!data.success){
+        throw new Error(data.message)
+      }
+      console.log(data)
+    } catch (error) {
+      console.log(error);
+    }
+  }
   return (
     <>
       <div className="login-form-container signup-form-container">
         <h2>Sign Up</h2>
-        <form action="" className="login-form">
+        <form action="" className="login-form" onSubmit={signUpUser}>
           <input type="email" placeholder="Enter your Email" required="true" />
           <input
             type="password"
