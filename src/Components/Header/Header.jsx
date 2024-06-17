@@ -38,6 +38,10 @@ const Header = () => {
             <CiHeart size={"1.9rem"} />
             <div className="cartQuantity">0</div>
             <span className="tooltiptext">Wishlist</span>
+            <Link to="/mywishlist">
+              <CiHeart size={"1.9rem"} />
+              <span className="tooltiptext">Wishlist</span>
+            </Link>
           </div>
           <div>
             <div className="container">
