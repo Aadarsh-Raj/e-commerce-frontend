@@ -10,6 +10,7 @@ import UserProfile from "./Components/UserProfile";
 import WishlistContainer from "./Components/WishlistContainer";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
+import AdminPanel from "./Components/AdminPanel";
 function App() {
   return (
     <>
@@ -20,6 +21,8 @@ function App() {
           <Route path={"/login"} element={<LoginPage />} />
           <Route path={"/mywishlist"} element={<WishlistContainer />} />
           <Route path={"/myprofile"} element={<UserProfile />} />
+          <Route path={"/productcart"} element={<ProductCart />} />
+          <Route path={"/seller"} element={<AdminPanel />} />
         </Routes>
         <Footer />
       </main>

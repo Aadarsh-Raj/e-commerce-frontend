@@ -2,9 +2,7 @@ import "../Styles/Header.css";
 import { GoPerson } from "react-icons/go";
 import { BsCart } from "react-icons/bs";
 import { CiHeart } from "react-icons/ci";
-// import { CiSearch } from "react-icons/ci";
 import { useState } from "react";
-// import { RxHamburgerMenu } from "react-icons/rx";
 import { CiHome } from "react-icons/ci";
 import { GiClothes } from "react-icons/gi";
 import { FaBlogger } from "react-icons/fa";
@@ -30,16 +28,16 @@ const Header = () => {
             </Link>
           </div>
           <div className="tooltip">
-            <BsCart size={"1.5rem"} />
-            <span className="cartQuantity">0</span>
-            <span className="tooltiptext">Cart</span>
+            <Link to="/productcart">
+              <BsCart size={"1.5rem"} />
+              <span className="cartQuantity">0</span>
+              <span className="tooltiptext">Cart</span>
+            </Link>
           </div>
           <div className="tooltip">
-            <CiHeart size={"1.9rem"} />
-            <div className="cartQuantity">0</div>
-            <span className="tooltiptext">Wishlist</span>
             <Link to="/mywishlist">
               <CiHeart size={"1.9rem"} />
+              <div className="cartQuantity">0</div>
               <span className="tooltiptext">Wishlist</span>
             </Link>
           </div>
@@ -101,7 +99,7 @@ const Header = () => {
               <li>
                 <button>
                   <GiClothes />
-                  <span>Products</span>
+                  <span>Categories</span>
                 </button>
               </li>
 
@@ -119,24 +117,28 @@ const Header = () => {
               </li>
               <hr />
               <li>
-                <button>
-                  <Link to="/myprofile">
+                <Link to="/myprofile">
+                  <button>
                     <GoPerson />
                     <span>Account</span>
-                  </Link>
-                </button>
+                  </button>
+                </Link>
               </li>
               <li>
-                <button>
-                  <BsCart />
-                  <span>Cart</span>
-                </button>
+                <Link to="/productcart">
+                  <button>
+                    <BsCart />
+                    <span>Cart</span>
+                  </button>
+                </Link>
               </li>
               <li>
-                <button>
-                  <CiHeart />
-                  <span>Wishlist</span>
-                </button>
+                <Link to="/mywishlist">
+                  <button>
+                    <CiHeart />
+                    <span>Wishlist</span>
+                  </button>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -166,7 +168,7 @@ const Header = () => {
             className={activeNavItem === "Products" ? "active" : ""}
             onClick={() => handleNavItem("Products")}
           >
-            Products
+            Categories
           </div>
         </div>
         <div className="navBtn">
