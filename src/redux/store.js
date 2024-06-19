@@ -3,8 +3,6 @@ import counterReducer from './counterSlice';
 const store = configureStore({
     reducer:{
         counter:counterReducer,
-        isLoginFormActive: true
-        
     }
 });
 
