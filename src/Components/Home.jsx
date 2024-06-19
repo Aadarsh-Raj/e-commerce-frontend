@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
+import CardList from "./CardList/CardList";
 
 const Home = () => {
   return (
-    <>'
-    
-    
-    This is home page
+    <>
+      <CardList />
+      This is home page
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

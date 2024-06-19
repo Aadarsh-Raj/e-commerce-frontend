@@ -170,3 +170,10 @@
   font-size: 22px;
   z-index: 1001;
 }
+
+.cartBottomDetails {
+  /* border: 1px solid gray; */
+  text-align: center;
+  background-color: #c6c6d088;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
